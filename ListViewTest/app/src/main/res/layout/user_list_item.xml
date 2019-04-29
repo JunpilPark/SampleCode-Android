@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/txt_lable_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이름"
+        android:layout_margin="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_value_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="이름 값"
+        app:layout_constraintStart_toEndOf="@id/txt_lable_mobile"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/txt_lable_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "전화번호"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_value_name"/>
+
+    <TextView
+        android:id="@+id/txt_value_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="전화번호 값"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintStart_toEndOf="@id/txt_lable_mobile"
+        app:layout_constraintTop_toBottomOf="@id/txt_value_name"/>
+
+
+    <TextView
+        android:id="@+id/txt_lable_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "메일"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_value_mobile"/>
+
+    <TextView
+        android:id="@+id/txt_value_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text = "메일 값"
+        app:layout_constraintStart_toEndOf="@id/txt_lable_mobile"
+        app:layout_constraintTop_toBottomOf="@id/txt_value_mobile"/>
+</android.support.constraint.ConstraintLayout>
