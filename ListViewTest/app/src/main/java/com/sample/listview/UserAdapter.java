@@ -55,9 +55,9 @@ public class UserAdapter extends BaseAdapter {
             userViewHolder = (UserViewHolder) convertView.getTag();
         }
 
-        userViewHolder.txtMobile.setText(userList.get(position).getMobile());
-        userViewHolder.txtName.setText(userList.get(position).getName());
-        userViewHolder.txtMail.setText(userList.get(position).getEmail());
+        userViewHolder.bind(userList.get(position).getName(),
+                userList.get(position).getEmail(),
+                userList.get(position).getMobile());
 
         return convertView;
     }
@@ -76,5 +76,11 @@ public class UserAdapter extends BaseAdapter {
         TextView txtName;
         TextView txtMail;
         TextView txtMobile;
+
+        public void bind(String name, String mail, String mobile) {
+            txtName.setText(name);
+            txtMail.setText(mail);
+            txtMobile.setText(mobile);
+        }
     }
 }
