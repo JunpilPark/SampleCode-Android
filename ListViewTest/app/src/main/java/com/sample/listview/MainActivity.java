@@ -1,10 +1,12 @@
 package com.sample.listview;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Adapter;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListAdapter;
 import android.widget.ListView;
@@ -26,6 +28,14 @@ public class MainActivity extends AppCompatActivity {
         userAdapter.addUser(user);
         listViewUser.setAdapter(userAdapter);
 
+        Button btnMoveRecyclerTest = findViewById(R.id.btn_move_recycler_test);
+        btnMoveRecyclerTest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getBaseContext(), RecyclerViewTestActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
 }

@@ -19,7 +19,7 @@ public class UserAdapter extends BaseAdapter {
         this.context = context;
     }
 
-    UserAdapter(ArrayList userList) {
+    UserAdapter(Context context, ArrayList userList) {
         this.userList = userList;
         this.context = context;
     }

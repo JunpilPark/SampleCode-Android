@@ -1,10 +1,10 @@
 package com.sample.listview.model;
 
 public class User {
-    String id;
-    String name;
-    String email;
-    String mobile;
+    private String id;
+    private String name;
+    private String email;
+    private String mobile;
 
     public User(String id, String name, String email, String mobile) {
         this.id = id;
